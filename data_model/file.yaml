@@ -30,6 +30,9 @@ fields:
   - name: image_path
     description: The file system location of the executable that is associated with the pid that generated this event.
     example: C:\Windows\system32\notepad.exe
+  - name: command_line
+    description: The command line string contains all arguments passed to the process upon execution.
+    example: example.exe arg1 arg2
   - name: md5_hash
     description: An MD5 hash of the contents of the file located at `image_path`. The field is in hex notation, without the 0x prefix.
     example: 5eb63bbbe01eeed093cb22bb8f5acdc3
